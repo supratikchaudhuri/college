@@ -3,7 +3,7 @@ int main() {
     int at[10],bt[10],x[10];
     int wt[10],tat[10],completion[10];
     int i,j,smallest,count=0,time,n;
-    float avg_wt=0,avg_tat=0,end;S
+    float avg_wt=0,avg_tat=0,end;
 
     printf("\nEnter the number of Processes: ");  //Number of Processes as Input
     scanf("%d",&n);
