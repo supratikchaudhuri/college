@@ -4,7 +4,7 @@ org 0000h		;teeling assembler tells to store program from 0000h
 
 mov r0, #40h		;40h=82h pointer to mem loc having lower 8bit miltiplicand
 
-mov r1, #42h		42h=10h poiner to mem loc of multiplier
+mov r1, #42h		;42h=10h poiner to mem loc of multiplier
 mov a, @r1		;r1 r1 only interact with a
 mov b, a		;copy to b from a
 mov a, @r0		;getlower 8bit multiplicand in r0 to a
