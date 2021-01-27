@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Employee Management System</title>
+      <style>
+         body{
+         background-color: #e4e3e3;
+         }
+         .container{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         }
+         h1{
+         color:#204051;
+         font-size: 2.8rem;
+         font-family: monospace
+         }
+         .btn{
+         padding:10px;
+         margin:20px 0;
+         background-color:#84a9ac ;
+         border-radius: 7px;
+         color:white;
+         text-decoration: none;
+         font-size: 17px;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+         .btn:hover{
+         background-color: #3b6978;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1>Employee Management System</h1>
+         <a href="insert.php" class="btn">Insert employee details</a>
+         <a href="update.php" class="btn">Update employee details</a>
+         <a href="delete.php" class="btn">Delete employee details</a>
+         <a href="display.php" class="btn">Display employee details</a>
+      </div>
+   </body>
+</html>
