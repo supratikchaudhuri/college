@@ -1,0 +1,48 @@
+{
+    "id": "1234",
+    "name": "Supratik",
+    "email" : "rikc.2000@gmail.com",
+    "age" : 20
+}
+
+{
+    "id": "3456",
+    "name": "Sharon",
+    "email" : "asffgh@gmail.com",
+    "age" : 24
+}
+
+{
+    "id": "1111",
+    "name": "John Doe",
+    "email" : "qwert@yahoo.com",
+    "age" : 29
+}
+
+{
+    "id": "4444",
+    "name": "Jimmy",
+    "email" : "jimmy@gmail.com",
+    "age" : 59
+}
+
+{
+    "id": "1212",
+    "name": "Dave",
+    "email" : "dave@gmail.com",
+    "age" : 12
+}
+
+{
+    "id": "1000",
+    "name": "Jerome",
+    "email" : "jrm@gmail.com",
+    "age" : 34
+}
+
+{
+    "id": "2345",
+    "name": "Jack",
+    "email" : "jack@gmail.com",
+    "age" : 40
+}
