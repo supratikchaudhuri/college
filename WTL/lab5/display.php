@@ -10,6 +10,7 @@
             body {
                 background-color: #e4e3e3;
                 color: #204051;
+                font-family: monospace
             }
             h1 {
                 margin: 20px 0;
@@ -47,24 +48,21 @@
                 font-size:17px;
             }
             table tr:first-child th{
-                border: 2px solid blue;
+                border: 2px solid lightblue;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-                border-bottom: 3px solid blue;
+                border-bottom: 3px solid lightblue;
             }
             table tr td{
-                background-color: #3b6978;
+                background-color: rgba(255, 255, 255, 0.6);
                 padding: 13px;
                 margin: 2px;
-                opacity:0.7;
+                opacity:1;
                 border-radius: 3px;
                 text-shadow: 1px 1px -1px black;
             }
             table tr td:nth-child(2),table tr td:nth-child(3){
                 text-align: center;
-            }
-            table tr td:hover{
-                opacity:1;
             }
         </style>
 
@@ -78,36 +76,37 @@
             <th>Department Name</th>
             <th>Phone number</th>
             <th>Date of joining</th></tr>
-        </table>
+        
 
-        <?php
-            $exist = false;
-            include '_dbconnect.php';
-            $sql = "SELECT * FROM `employees`;";
-            $result = mysqli_query($conn,$sql);
-            if(mysqli_num_rows($result)>0)
-            {
-                while($row = mysqli_fetch_assoc($result))
+            <?php
+                $exist = false;
+                include '_dbconnect.php';
+                $sql = "SELECT * FROM `employees`;";
+                $result = mysqli_query($conn,$sql);
+                if(mysqli_num_rows($result)>0)
                 {
-                    $empid = $row['empid'];
-                    $name = $row['empname'];
-                    $dept = $row['deptname'];
-                    $phone = $row['phno'];
-                    $date = $row['jdate'];
-                    echo "<tr>
-                    <td>$empid</td>
-                    <td>$name</td>
-                    <td>$dept</td>
-                    <td>$phone</td>
-                    <td>$date</td>
-                    </tr>";
+                    while($row = mysqli_fetch_assoc($result))
+                    {
+                        $empid = $row['empid'];
+                        $name = $row['empname'];
+                        $dept = $row['deptname'];
+                        $phone = $row['phno'];
+                        $date = $row['jdate'];
+                        echo "<tr>
+                        <td>$empid</td>
+                        <td>$name</td>
+                        <td>$dept</td>
+                        <td>$phone</td>
+                        <td>$date</td>
+                        </tr>";
+                    }
                 }
-            }
-            else
-            {
-                echo "<div id='alert_danger'>No record exists!<i class='fa fa-times' onclick='alert_dismiss2()'></i></div>";
-            }
-        ?>
+                else
+                {
+                    echo "<div id='alert_danger'>No record exists!<i class='fa fa-times' onclick='alert_dismiss2()'></i></div>";
+                }
+            ?>
+        </table>
         <script>
             function alert_dismiss2()
             {
